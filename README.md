@@ -1,1 +1,25 @@
 # allchristyhern.github.io
+<style>
+
+    html, body, input, select, textarea {
+        font-size: 1.05em !important;
+    }
+</style>
+<!-- load bootstrap and fontawesome via CDN -->
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" />
+<!-- load angular via CDN -->
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular-route.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular-resource.min.js"></script>
+<!--load your javascript file-->
+<script src="app.js"></script>
+
+<div class="row">
+    <!--using  bootstrap css-->
+    <div class="col-md-6 col-md-offset-3">
+        <h4>Movie search</h4>
+        <div class="form-group">
+            <input type="text" ng-model="movie" class="form-control" />
+        </div>
+        <a href="#/search" class="btn btn-primary">Get Results from TheMovieDB.org</a>
+    </div>
